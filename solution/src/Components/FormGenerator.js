@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const InputControl = ({label,id,type,required,choices,onChoiceChange,title,firstName,onfirstNameChange,lastName,onlastNameChange,length,min,max,defaultValue,age,onAgeChange,viewMode}) => {
     
     // View Mode
@@ -109,8 +108,8 @@ render(){
             
             { this.props.editMode ?
                 <div>  
-                    <input type="submit" value={this.props.actions[0].label} onClick={this.props.save}/>
-                    <input type="submit" value={this.props.actions[1].label} onClick={this.props.cancel} />
+                    <input type="submit" className="save" value={this.props.actions[0].label} onClick={this.props.save}/>
+                    <input type="submit" className="cancel" value={this.props.actions[1].label} onClick={this.props.cancel} />
                 </div>
                : null
             }
